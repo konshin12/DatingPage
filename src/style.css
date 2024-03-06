@@ -7,3 +7,58 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     color: rgb(37, 16, 57);
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    /* opacity: 0.5;  */
+}
+
+#yesButton {
+    position: fixed;
+    top: 60%;
+    left: 25%;
+    color: rgb(27, 27, 27);
+    background-color: aquamarine;
+    border: 2px solid rgb(92, 50, 50);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#noButton {
+    position: fixed;
+    top: 60%;
+    right: 25%;
+    color: rgb(27, 27, 27);
+    background-color: aquamarine;
+    border: 2px solid rgb(92, 50, 50);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#yesButton:hover {
+    background-color: rgb(101, 235, 110);
+    box-shadow: 5px 5px 5px #888888;
+    animation: shake 0.3s
+}
+
+#noButton:hover {
+    background-color: rgb(253, 68, 148);
+    animation: shake 0.2s;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
